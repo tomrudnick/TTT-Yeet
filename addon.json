@@ -1,5 +1,10 @@
 {
 	"title"		:	"TTT Yeet",
 	"type"		:	"weapon",
-	"tags"		:	[ "roleplay", "fun" ]
+	"tags"		:	[ "roleplay", "fun" ],
+	"ignore"	:	
+	[
+		".git/*",
+		"*.md"
+	]
 }

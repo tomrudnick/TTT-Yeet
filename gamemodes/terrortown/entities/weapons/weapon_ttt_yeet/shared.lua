@@ -1,24 +1,27 @@
-AddCSLuaFile("shared.lua")
+if SERVER then
+    AddCSLuaFile("shared.lua")
+    resource.AddWorkshop("2252533416")
+end
 
 SWEP.PrintName				= "Yeet"
 SWEP.Author					= "Kim Jong Tiramisus"
 SWEP.Instructions			= "This Weapon will yeet your enemy into heaven. \nYou got two shots"
-SWEP.Spawnable = true
-SWEP.AdminOnly = true
+SWEP.Spawnable              = true
+SWEP.AdminOnly              = true
 
-SWEP.Base = "weapon_tttbase"
-SWEP.Kind = WEAPON_EQUIP1
-SWEP.CanBuy = { ROLE_TRAITOR }
-SWEP.Slot = 6
-SWEP.InLoadoutFor = nil
-SWEP.LimitedStock = true
+SWEP.Base                   = "weapon_tttbase"
+SWEP.Kind                   = WEAPON_EQUIP1
+SWEP.CanBuy                 = { ROLE_TRAITOR }
+SWEP.Slot                   = 6
+SWEP.InLoadoutFor           = nil
+SWEP.LimitedStock           = true
 
-SWEP.AllowDrop = true
-SWEP.IsSilent = false
-SWEP.NoSights = false
-SWEP.AutoSpawnable = false
-SWEP.HoldType = "pistol"
-SWEP.UseHands = true
+SWEP.AllowDrop              = true
+SWEP.IsSilent               = false
+SWEP.NoSights               = false
+SWEP.AutoSpawnable          = false
+SWEP.HoldType               = "pistol"
+SWEP.UseHands               = true
 
 SWEP.Primary.ClipSize		= 2
 SWEP.Primary.DefaultClip	= 2
